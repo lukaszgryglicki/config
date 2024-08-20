@@ -8,7 +8,7 @@ TCPKeepAlive yes
 ClientAliveInterval 299
 ClientAliveCountMax 299
 ```
-- `service sshd restart`.
+- `service sshd restart` and/or `sudo systemctl restart ssh.service`.
 - NOTE: that server sends broken pipe if no IDLE package is received from client after `ClientAliveInterval` - so this must be either skipped or set to a value higher than `ServerAliveInterval` in SSH client config.
 
 
