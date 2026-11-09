@@ -49,3 +49,11 @@ export HISTCONTROL=ignoredups:ignorespace:erasedups
 - SSH to a remote server (using password): `ssh user@host`.
 - Add a key: `vim ~user/.ssh/authorized_keys`
 - Set correct perms: `chmod 700 ~user/.ssh && chmod 600 ~user/.ssh/authorized_keys`.
+
+
+# GRUB
+Add this to `` /etc/default/grub ``:
+```
+GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"
+GRUB_CMDLINE_LINUX=""
+```
